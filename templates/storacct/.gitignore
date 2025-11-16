@@ -1,0 +1,27 @@
+# Local Terraform state (we want remote state only)
+*.tfstate
+*.tfstate.*
+terraform.tfstate.backup
+
+# Secrets - NEVER commit these!
+secrets.auto.tfvars
+*.secrets.tfvars
+*.secret.tfvars
+
+# Terraform working directories
+.terraform/
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
